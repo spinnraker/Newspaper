@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0", width="device-width">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+
+    <title>Health</title>
+</head>
+<body>
+<div class="container" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="health.html">Health</a>
+                    <a class="nav-link" href="sports.html">Sports</a>
+                    <a class="nav-link" href="tech.html">Tech</a>
+                    <a class="nav-link" href="#">About us</a>
+                    <a class="nav-link" href="#">Contact</a>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div>
+    <h1 class="h1 text-center display-1" id="name">National News Network</h1>
+    <h2 class="h2 text-center display-6">Your news for <input id="date" type="date"> </h2>
+</div>
+<main>
+Health
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/boxed_water.jpg" class="d-block w-100" alt="Two women drinking boxed water">
+                <div class="carousel-caption d-none d-md-block carousel-text">
+                    <h5>Drinking water is good for you</h5>
+                    <p>Obi-Wan is here. The Force is with him. I don't know what you're talking about. I am a member of
+                        the Imperial Senate on a diplomatic mission to Alderaan-- Don't be too proud of this
+                        technological terror you've constructed. The ability to destroy a planet is insignificant
+                        next to the power of the Force.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/hiking.jpg" class="d-block w-100" alt="Woman hiking">
+                <div class="carousel-caption d-none d-md-block carousel-text">
+                    <h5>Get out and get some sun</h5>
+                    <p>I don't know what you're talking about. I am a member of the Imperial Senate on a diplomatic
+                        mission to Alderaan-- No! Alderaan is peaceful. We have no weapons. You can't possibly…
+                        In my experience, there is no such thing as luck.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/abs.jpg" class="d-block w-100" alt="Woman doing crunches">
+                <div class="carousel-caption d-none d-md-block carousel-text">
+                    <h5>It's crunch time!</h5>
+                    <p>Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff,
+                        but I've never seen anything to make me believe there's one all-powerful Force controlling
+                        everything. There's no mystical energy field that controls my destiny. It's all a lot of simple
+                        tricks and nonsense.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</main>
+
+<script>
+    // Provide accordion effect
+    let acc = document.getElementsByClassName("accordion");
+    let i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+
+    var date = new Date();
+    var currentDate = date.toISOString().slice(0, 10);
+    var currentTime = date.getHours() + ":" + date.getMinutes();
+
+    document.getElementById("date").value = currentDate;
+</script>
+</body>
+
+<footer id="footer" class="bd-footer py-5 mt-5 bd-light">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                <h5>Guides</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">Home</li>
+                    <li class="mb-2">Health</li>
+                    <li class="mb-2">Sport</li>
+                    <li class="mb-2">Tech</li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+                <h5>Follow us on social media!</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">Instagram</li>
+                    <li class="mb-2">Twitter</li>
+                    <li class="mb-2">TikTok</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
