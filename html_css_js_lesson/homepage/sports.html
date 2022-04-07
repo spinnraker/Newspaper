@@ -2,9 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0", width="device-width">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+
     <title>Sports News</title>
 </head>
 <body>
-sports
+
+<!--Navbar -->
+<div class="container" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="health.html">Health</a>
+                    <a class="nav-link active" aria-current="page" href="sports.html">Sports</a>
+                    <a class="nav-link" href="tech.html">Tech</a>
+                    <a class="nav-link" href="#">About us</a>
+                    <a class="nav-link" href="#">Contact</a>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div>
+    <h1 class="h1 text-center display-1" id="name">National News Network</h1>
+    <h2 class="h2 text-center display-6">Your news for <input id="date" type="date"> </h2>
+</div>
+<!-- Table containing Villanova's Women's basketball team 2022-->
+
+<div class="container">
+    <div class="table-responsive">
+        <table class="table caption-top table-dark table-striped table-sm">
+            <thead>
+            <th scope="col">Number</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Position</th>
+            <caption>Villanova's 2022 Players</caption>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Zanai Jones</td>
+                <td>Guard</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Kaitlyn Orihel</td>
+                <td>Guard</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Lucy Olsen</td>
+                <td>Guard</td>
+            </tr>
+            <tr>
+                <th scope="row">12</th>
+                <td>Lior Garzon</td>
+                <td>Forward</td>
+            </tr>
+            <tr>
+                <th scope="row">21</th>
+                <td>Kylie Swider</td>
+                <td>Forward/Center</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+
+<!--Custom cards-->
+<div class="container px-4 py-5" id="custom-cards">
+    <h2 style="text-align: center">Feature Stories</h2>
+<!--Left picture-->
+<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" id="left-sport">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 1h-1 fw-bold">I don't know what you're talking about.</h2>
+            </div>
+        </div>
+</div>
+    <!--Center picture-->
+    <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bd-dark rounded-5 shadow-lg" id="middle-sport">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 1h-1 fw-bold">As you wish.</h2>
+            </div>
+        </div>
+    </div>
+    <!--Right picture-->
+    <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bd-dark rounded-5 shadow-lg" id="right-sport">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h2 class="pt-5 mt-5 mb-4 display-6 1h-1 fw-bold">I find your lack of faith disturbing.</h2>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
 </body>
+
+<script>
+    var date = new Date();
+    var currentDate = date.toISOString().slice(0, 10);
+    var currentTime = date.getHours() + ":" + date.getMinutes();
+
+    document.getElementById("date").value = currentDate;
+</script>
+</body>
+
+<footer id="footer" class="bd-footer py-5 mt-5 bd-light">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                <h5>Guides</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">Home</li>
+                    <li class="mb-2">Health</li>
+                    <li class="mb-2">Sport</li>
+                    <li class="mb-2">Tech</li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3">
+                <h5>Follow us on social media!</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">Instagram</li>
+                    <li class="mb-2">Twitter</li>
+                    <li class="mb-2">TikTok</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</footer>
 </html>

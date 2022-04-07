@@ -15,6 +15,8 @@
     <title>Health</title>
 </head>
 <body>
+
+<!--Navbar -->
 <div class="container" id="navbar">
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -23,8 +25,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="health.html">Health</a>
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="health.html">Health</a>
                     <a class="nav-link" href="sports.html">Sports</a>
                     <a class="nav-link" href="tech.html">Tech</a>
                     <a class="nav-link" href="#">About us</a>
@@ -44,7 +46,8 @@
     <h2 class="h2 text-center display-6">Your news for <input id="date" type="date"> </h2>
 </div>
 <main>
-Health
+
+    <div class="container">
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -92,29 +95,11 @@ Health
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    </div>
 </main>
 
 <script>
-    // Provide accordion effect
-    let acc = document.getElementsByClassName("accordion");
-    let i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
-            this.classList.toggle("active");
-
-            /* Toggle between hiding and showing the active panel */
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-
+    // Display today's date
     var date = new Date();
     var currentDate = date.toISOString().slice(0, 10);
     var currentTime = date.getHours() + ":" + date.getMinutes();

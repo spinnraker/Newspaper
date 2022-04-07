@@ -59,3 +59,15 @@
 .carousel-text {
     background-color: black;
 }
+
+#left-sport{
+    background-image: url("https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFza2V0YmFsbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60");
+}
+
+#middle-sport{
+    background-image: url("https://images.unsplash.com/photo-1504450758481-7338eba7524a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJhc2tldGJhbGx8ZW58MHx8MHx8&auto=format&fit=crop&w=1000&q=60");
+}
+
+#right-sport{
+    background-image: url("https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YmFza2V0YmFsbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60");
+}
