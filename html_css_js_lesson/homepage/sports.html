@@ -27,7 +27,7 @@
                     <a class="nav-link" href="index.html">Home</a>
                     <a class="nav-link" href="health.html">Health</a>
                     <a class="nav-link active" aria-current="page" href="sports.html">Sports</a>
-                    <a class="nav-link" href="tech.html">Tech</a>
+                    <a class="nav-link " href="tech.html">Tech</a>
                     <a class="nav-link" href="#">About us</a>
                     <a class="nav-link" href="#">Contact</a>
                     <form class="d-flex">
@@ -93,12 +93,14 @@
     <h2 style="text-align: center">Feature Stories</h2>
 <!--Left picture-->
 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-    <div class="col">
+    <div class="col" id="left-article" onclick="enlargeImg()">
+
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" id="left-sport">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h2 class="pt-5 mt-5 mb-4 display-6 1h-1 fw-bold">I don't know what you're talking about.</h2>
             </div>
         </div>
+
 </div>
     <!--Center picture-->
     <div class="col">
@@ -124,11 +126,15 @@
 </body>
 
 <script>
+
+    // Display today's date
     var date = new Date();
     var currentDate = date.toISOString().slice(0, 10);
     var currentTime = date.getHours() + ":" + date.getMinutes();
 
     document.getElementById("date").value = currentDate;
+
+
 </script>
 </body>
 
@@ -138,10 +144,18 @@
             <div class="col-6 col-lg-2 offset-lg-1 mb-3">
                 <h5>Guides</h5>
                 <ul class="list-unstyled">
-                    <li class="mb-2">Home</li>
-                    <li class="mb-2">Health</li>
-                    <li class="mb-2">Sport</li>
-                    <li class="mb-2">Tech</li>
+                    <li class="mb-2">
+                        <a href="tech.html">Home</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="health.html">Health</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="sports.html">Sports</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="index.html">Tech</a>
+                    </li>
                 </ul>
             </div>
             <div class="col-6 col-lg-2 mb-3">

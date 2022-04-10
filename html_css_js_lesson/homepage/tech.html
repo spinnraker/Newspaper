@@ -1,10 +1,187 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tech News</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0", width="device-width">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+
+  <title>N3</title>
 </head>
 <body>
-tech
+<div class="container" id="navbar">
+<nav class="navbar  navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav" >
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="health.html">Health</a>
+        <a class="nav-link" href="sports.html">Sports</a>
+        <a class="nav-link active" aria-current="page" href="tech.html">Tech</a>
+        <a class="nav-link" href="#">About us</a>
+        <a class="nav-link" href="#">Contact</a>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+</div>
+
+  <div>
+    <h1 class="h1 text-center display-1" id="name">National News Network</h1>
+    <h2 class="h2 text-center display-6">Your news for <input id="date" type="date"> </h2>
+  </div>
+<main>
+<!--3 landing page articles-->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
+<!--        Left article-->
+        <article id="left_article_bottom">
+          <img src="images/currency.jpg" class="img-fluid" alt="international currencies">
+          <button class="accordion">
+            <h3 class="h3">I can't go to juvie. They use guys like me as currency.</h3>
+          </button>
+          <div class="panel">
+            <p>
+              How could you?! Haven't you learned anything from that guy who gives those sermons at church? Captain
+              Whatshisname? We live in a society of laws! Why do you think I took you to all those Police Academy movies?
+              For fun? Well, <strong>didn't hear anybody laughing, did you?</strong>  Except at that guy who made sound effects. Makes sound effects
+              and laughs. Where was I? Oh yeah! Stay out of my booze. Uh, no, they're saying "Boo-urns, Boo-urns."
+            </p>
+          </div>
+
+        </article>
+      </div>
+
+<!--      Middle article-->
+      <div class="col-6">
+        <article id="main_story">
+          <img src="images/people.jpg" class="img-fluid" alt="4 young people sitting outside">
+          <button class="accordion">
+            <h2 class="h2">It takes two to lie. One to lie and one to listen.</h2>
+          </button>
+          <div class="panel">
+            <p>
+              You don't win friends with salad. Marge, just about everything's a sin. Y'ever sat down and read this thing?
+              Technically we're not supposed to go to the bathroom. The <strong>Internet King?</strong> I wonder if he could provide faster
+              nudity. Look out, Itchy! He's Irish! Here's to alcohol, the cause of — and solution to — all life's problems.
+              Jesus must be spinning in his grave! Remember the time he ate my goldfish? And you lied and said I never had
+              goldfish.
+              You don't win friends with salad. Marge, just about everything's a sin. Y'ever sat down and read this thing?
+              Technically we're not supposed to go to the bathroom. The <strong>Internet King?</strong> I wonder if he could provide faster
+              nudity. Look out, Itchy! He's Irish! Here's to alcohol, the cause of — and solution to — all life's problems.
+              Jesus must be spinning in his grave! Remember the time he ate my goldfish? And you lied and said I never had
+              goldfish.
+              You don't win friends with salad. Marge, just about everything's a sin. Y'ever sat down and read this thing?
+              Technically we're not supposed to go to the bathroom. The <strong>Internet King?</strong> I wonder if he could provide faster
+              nudity. Look out, Itchy! He's Irish! Here's to alcohol, the cause of — and solution to — all life's problems.
+              Jesus must be spinning in his grave! Remember the time he ate my goldfish? And you lied and said I never had
+              goldfish.
+              You don't win friends with salad. Marge, just about everything's a sin. Y'ever sat down and read this thing?
+              Technically we're not supposed to go to the bathroom. The <strong>Internet King?</strong> I wonder if he could provide faster
+              nudity. Look out, Itchy! He's Irish! Here's to alcohol, the cause of — and solution to — all life's problems.
+              Jesus must be spinning in his grave! Remember the time he ate my goldfish? And you lied and said I never had
+              goldfish.
+            </p>
+          </div>
+
+        </article>
+      </div>
+      <div class="col">
+        <article id="right_article">
+          <img src="images/bee.jpg" class="img-fluid" alt="honey bee sitting on flower">
+          <button class="accordion">
+            <h3 class="h3">I'm allergic to bee stings. They cause me to, uh, die.</h3>
+          </button>
+          <div class="panel">
+            <p>
+              This is the <strong>greatest</strong> case of false advertising I've seen since I sued the movie "The Never Ending Story. " Donuts.
+              Is there anything they can't do? Well, he's kind of had it in for me ever since I accidentally ran over his dog.
+              Actually, replace "accidentally" with "repeatedly" and replace "dog" with "son.
+            </p>
+          </div>
+
+        </article>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  // Provide accordion effect
+  let acc = document.getElementsByClassName("accordion");
+  let i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+
+  // Display today's date
+  var date = new Date();
+  var currentDate = date.toISOString().slice(0, 10);
+  var currentTime = date.getHours() + ":" + date.getMinutes();
+
+  document.getElementById("date").value = currentDate;
+</script>
 </body>
+
+<footer id="footer" class="bd-footer py-5 mt-5 bd-light">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+        <h5>Guides</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="tech.html">Home</a>
+          </li>
+          <li class="mb-2">
+            <a href="health.html">Health</a>
+          </li>
+          <li class="mb-2">
+            <a href="sports.html">Sports</a>
+          </li>
+          <li class="mb-2">
+            <a href="index.html">Tech</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Follow us on social media!</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">Instagram</li>
+          <li class="mb-2">Twitter</li>
+          <li class="mb-2">TikTok</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</footer>
 </html>
